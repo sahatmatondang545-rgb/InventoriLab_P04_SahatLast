@@ -1,4 +1,3 @@
-
 package view;
 import java.util.ArrayList;
 import java.util.List;
@@ -120,7 +119,6 @@ private void tambahDemo() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inventori Laboratorium - Data Barang");
-        setPreferredSize(new java.awt.Dimension(760, 520));
 
         lblJudul.setFont(new java.awt.Font("Tahoma", 1, 22)); // NOI18N
         lblJudul.setText("INVENTORI LABORATORIUM");
@@ -160,29 +158,25 @@ private void tambahDemo() {
         pnlInputLayout.setHorizontalGroup(
             pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlInputLayout.createSequentialGroup()
-                .addGroup(pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlInputLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlInputLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlInputLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblKode, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28)
-                .addGroup(pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtKode, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-                    .addComponent(txtNama)
-                    .addComponent(txtJumlah)))
-            .addGroup(pnlInputLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnTambah)
-                .addGap(30, 30, 30)
-                .addComponent(btnBersihkan)
-                .addGap(44, 44, 44)
-                .addComponent(btnTutup, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlInputLayout.createSequentialGroup()
+                        .addGroup(pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblNama, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblKode, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblJumlah, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addGroup(pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtKode, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+                            .addComponent(txtNama)
+                            .addComponent(txtJumlah)))
+                    .addGroup(pnlInputLayout.createSequentialGroup()
+                        .addComponent(btnTambah)
+                        .addGap(30, 30, 30)
+                        .addComponent(btnBersihkan)
+                        .addGap(44, 44, 44)
+                        .addComponent(btnTutup, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         pnlInputLayout.setVerticalGroup(
             pnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
